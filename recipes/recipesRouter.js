@@ -29,7 +29,7 @@ router.get('/:id', (req, res) => {
     })
 })
 
-router.get('/:id', (req, res) => {
+router.get('/:id/instructions', (req, res) => {
   Recipe.getInstructions(req.params.id)
     .then(recipe => {
       if(recipe) {
